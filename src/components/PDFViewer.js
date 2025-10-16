@@ -1,4 +1,4 @@
-export default function({src, height = 800}) {
+export default function PDFViewer({src, height = 800}) {
     return (
         <div className="w-full border rounded overflow-hidden">
             <iframe

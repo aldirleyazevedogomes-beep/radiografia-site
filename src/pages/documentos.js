@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import Link from '../components/PDFViewer'
+import PDFViewer from '../components/PDFViewer'
 
 export default function Documents() {
     return (

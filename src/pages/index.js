@@ -9,8 +9,8 @@ export default function Home() {
             <p className="mb-6 text-lg">Resumo Executivo: O Acórdão Nº137/STJ/2023 omitiu 24 pontos de facto essenciais - omissão que o STJ reconheceu publicamente em 15/11/2023. (versão integral disponível para download).</p>
 
             <div className="mb-6">
-                <Link href="/documentos">
-                    <a className="inline-block bg-gray-900 text-white px-4 py-2 rounded">Download</a>
+                <Link href="/documentos" className="inline-block bg-gray-900 text-white px-4 py-2 rounded">
+                    Download
                 </Link>
             </div>
 
