@@ -12,18 +12,18 @@ export default function Navbar() {
     return (
         <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow">
             <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
-                <link href="/" className="font-semibold text-lg">
-                Radiografia
-                </link>
+                <Link href="/" className="font-semibold text-lg">
+                    Radiografia
+                </Link>
                 <div className="flex space-x-4">
                     {links.map((link) => (
-                        <link
+                        <Link
                             key={link.name}
                             href={link.href}
                             className="hover:text-yellow-400 transition"
-                            >
+                        >
                             {link.name}
-                        </link>
+                        </Link>
                     ))}
                 </div>
             </div>
