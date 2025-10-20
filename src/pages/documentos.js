@@ -1,5 +1,7 @@
-import Layout from '../components/Layout'
-import PDFViewer from '../components/PDFViewer'
+
+import Layout from '../components/Layout';
+import PDFViewer from '../components/PDFViewer';
+import Link from 'next/link';
 
 export default function Documents() {
     return (
@@ -8,7 +10,9 @@ export default function Documents() {
                 <h1 className="text-2xl font-bold mb-4">Documentos</h1>
                 <p className="mb-4">Aqui você pode baixar o relatório completo e outros documentos relacionados.</p>
 
-                <a href="/documents/radiografia.pdf" download className="underline">Baixar relatorio completo (PDF)</a>
+                <Link href="/documents/radiografia.pdf" className="underline" download>
+                    Baixar relatorio completo (PDF)
+                </Link>
 
                 <div className="mt-6">
                     <PDFViewer src="/documents/radiografia.pdf" />

@@ -24,12 +24,12 @@ export default function Home() {
 
             <div className="mt-8 flex items-center justify-center gap-4">
                 <Link href="/documentos">
-                <a className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-95 transition">
-                    Ler relatório completo (PDF)
-                </a>
+                    <Link href="/documentos" className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-95 transition">
+                        Ler relatório completo (PDF)
+                    </Link>
                 </Link>
                 <Link href="/caso">
-                    <a className="inline-block border border-gray-200 px-6 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition"> Ver Resumo</a>
+                    <Link href="/caso" className="inline-block border border-gray-200 px-6 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition"> Ver Resumo</Link>
                 </Link>
             </div>
         </div>
