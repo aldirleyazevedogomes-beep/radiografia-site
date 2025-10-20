@@ -2,9 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
+console.log("Tailwind test loaded");
+
 export default function Home() {
   return (
-    <Layout>  
+        <Layout>  
         <section className="text-center">
             <div className="max-w-3xl mx-auto">
                 <div className="inline-block bg-white p-4 rounded-lg shadow-lg -mt-16"></div>
