@@ -5,28 +5,34 @@ import Layout from '../components/Layout'
 export default function Home() {
   return (
     <Layout>  
-        <section className="max-w-5xl mx auto text-center px-4">
+        <section className="text-center">
+            <div className="max-w-3xl mx-auto">
+                <div className="inline-block bg-white p-4 rounded-lg shadow-lg -mt-16"></div>
             <Image
             src="/images/deputado.jpg"
             alt="Deputado Amadeu Oliveira"
-            width={280}
-            height={280}
-            className="mx-auto rounded-full shadow-lg mb-6"
+            width={220}
+            height={220}
+            className="rounded-full"
             />
             
             <h1 className="text-3xl font-bold mb-4">Radiografia da prisão de um Deputado  </h1>
-            <p className="text-lg text-gray-700 mb-6">
-                Este relatorio analisa as irregularidades processuais que levaram a condenacao do deputado Amadeu Oliveira - Incluindo a omissao de 24 pontos de facto num acordao judicial, atribuida a um "erro de computador".</p>
+            <p className="text-lg text-gray-600 mt-4 leading-relaxed">
+                Este relatório analisa as irregularidades processuais que levaram a condenação do deputado Amadeu Oliveira - Incluindo a omissão de 24 pontos de facto num acordao judicial, atribuída a um "erro de computador".</p>
 
-            
+            <div className="mt-8 flex items-center justify-center gap-4">
                 <Link href="/documentos">
-                <a className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-yellow-500 transition">
-                    Ler relatorio completo (PDF)
+                <a className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-95 transition">
+                    Ler relatório completo (PDF)
                 </a>
                 </Link>
-            
-            </section>
-            </Layout>
- );
+                <Link href="/caso">
+                    <a className="inline-block border border-gray-200 px-6 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition"> Ver Resumo</a>
+                </Link>
+            </div>
+        </div>
+    </section>
+</Layout>
+);
 }
 

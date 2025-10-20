@@ -1,15 +1,16 @@
 export default function ChapterList({ chapters }) {
     return (
-        <div className="grid md:grid-cols-2 gap-6">
-            {chapters.map((chapter) => (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {chapters.map((ch) => (
                 <div
-                    key={chapter.id}
-                    className="bg-white shadow p-6 rounded-lg border hover:shadow-xl transition"
-                >
-                    <h3 className="font-semibold text-xl mb-2">{chapter.title}</h3>
-                    <p className="text-gray-600 mb-3">{chapter.summary}</p>
-                    <a href={`/documentos#cap${chapter.id}`} className="text-yellow-600 hover:underline">
-                        Ler Capitulo.
+                    key={ch.id}  className="card p-6 hover:shadow-xl transition">
+                    <h3 className="font-semibold text-xl mb-2">{ch.title}</h3>
+                    <p className="text-gray-600 mb-4">{ch.summary}</p>
+                    <a href={`/documentos/radiografia.pdf#page-${ch.page}`} 
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block text-sm text-accent hover:underline">
+                        Ler Capítulo.
                     </a>
                 </div>
             ))}
