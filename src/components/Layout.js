@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       <Navbar />
 
       <main className="flex-1">
-        <div className="bg-red-500 text-white text-center p-8"></div>
+        <div className="bg-red-500 text-white text-center p-8">TESTE DE ESTILO Tailwind</div>
         <div className="container mx-auto px-4 py-12">
           {children}
         </div>
