@@ -2,21 +2,20 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50 text-gray-800">
+
       <Navbar />
 
       <main className="flex-1">
-        <div className="bg-red-500 text-white text-center p-8">TESTE DE ESTILO Tailwind</div>
-        <div className="container mx-auto px-4 py-12">
+        <div className="max-w-5xl mx-auto px-6 py-12">
           {children}
         </div>
       </main>
 
-      <footer className="bg-primary text-gray-300 text-center py-6 mt-12">
-        <div className="container mx-auto px-4">
-          <p>© {new Date().getFullYear()} Radiografia da Prisão de um Deputado</p>
-          <p className="text-sm mt-1">
-            Conteúdo de análise jurídica. Não constitui acusação formal.
+      <footer className="bg-gray-900 text-gray-200 text-center py-6 mt-12">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-sm opacity-80">
+            &copy; {new Date().getFullYear()} Radiografia da Prisão de um Deputado. Todos os direitos reservados.
           </p>
         </div>
       </footer>

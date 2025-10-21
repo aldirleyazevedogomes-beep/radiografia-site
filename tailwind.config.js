@@ -5,16 +5,14 @@ module.exports = {
       ],
   theme: {
     extend: {
-      container: {
-        center: true,
-        padding: '1rem',
-      },
       colors: {
-        primary: '#0f172a', // cinza-azulado escuro
-        accent: '#fbbf24',  // amarelo suave
+        primary: '#1e293b',
+        accent: '##fbbf24',
+        bg: '#f8fafc',
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        sans: [ 'Inter' , 'ui-sans-serif', 'system-ui'],
+        display: [ 'Poppins' , 'ui-sans-serif'],
       },
     },
   },
