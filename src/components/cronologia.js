@@ -1,5 +1,5 @@
 const events = [
-    {date: '02/08/2015' , title: 'Nomeacao como fensor oficioso', description: 'Tribunal de Ribeira Grande.' },
+    {date: '02/08/2015' , title: 'Nomeacao como defensor oficioso', description: 'Tribunal de Ribeira Grande.' },
     {date: '18/05/2021' , title: 'Posse como deputado', description: 'Tomou posse como deputado nacional.' },
     {date: '27/06/2021' , title: 'Saida temporaria de Arlindo Teixeira', description: 'viagem para Franca' },
     {date: '18/07/2021' , title: 'Detencao e prisao preventiva', description: 'Inicio da Prisao Preventiva de Amadeu Oliveira.' },

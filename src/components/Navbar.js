@@ -1,6 +1,10 @@
+import {useState} from "react";
 import Link from "next/link";
+import { Menu, X} from "lucide-react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const links = [
     { name: "Home", href: "/" },
     { name: "O Caso", href: "/caso" },
@@ -17,6 +21,13 @@ export default function Navbar() {
           AMADEU OLIVEIRA
         </Link>
 
+        <button
+          className="md:hidden text-primary focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
         <nav className="hidden md:flex space-x-6">
           {links.map((link) => (
             <Link
@@ -29,6 +40,23 @@ export default function Navbar() {
           ))}
         </nav>
       </div>
+
+      {isOpen && (
+        <div className="md:hidden bg-white border-t border-gray-100 shadow-inner">
+          <nav className="flex flex-col items-center py-4 space-y-3">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-gray-700 hover:text-accent text-lg font-medium"
+                onClick={() => setIsopen(false)}
+                >
+                {link.name}
+                </Link>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
