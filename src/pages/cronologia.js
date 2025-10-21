@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-export default function Cronologia() {
+export default function cronologia() {
     const events = [
         {date: '02/08/2015' , title: 'Nomeacao como defensor oficioso', description: 'Tribunal de Ribeira Grande.' },
         {date: '18/05/2021' , title: 'Posse como deputado', description: 'Tomou posse como deputado nacional.' },
