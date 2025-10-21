@@ -3,7 +3,7 @@ import ChapterList from "../components/ChapterList";
 import { p } from "framer-motion/client";
 
 const chapters =[
-    {id: 1, title: "I - Preambulo", summary: "de uma condenação judicial proferida pelo STJ - Supremo Tribunal de Justiça.", page: 1 },
+    {id: 1, title: "I - Preambulo", summary: "de uma condenação judicial proferida pelo STJ - Supremo Tribunal de Justiça.", page: 1, pdfUrl: "/documents/radiografia.pdf#page=1" },
     {id: 2, title: "II - Introdução e Contextualização", summary: "Resumo do caso.", page: 2 },
     {id: 3, title: "III - Principais Magistrados Judiciais Intervenientes", summary: "Cronologia dos principais atos processuais.", page: 8},
     {id: 4, title: "IV - O caso Arlindo Teixeira", summary: "Resulta provado que o caso Arlindo Teixeira pode ser reumido nos seguintes factos.", page: 16},
@@ -11,7 +11,7 @@ const chapters =[
     {id: 6, title: "VI - Inexistência Júridica", summary: "Amputação do Acórdão condenatório nº137/STJ/2023.", page: 33},
     {id: 7, title: "VII - Recusa do STJ", summary: "em corrigir o erro do computador.", page: 42},
     {id: 8, title: "VIII - Violação", summary: "do principio da vinculação temática.", page: 55},
-    {id: 9, title: "IX - O forjar de um suposto crime", summary: "de atentado contra o Estado de Direito - violação do principio da livre apreciação da prova pelo tribunal.", page: 57},
+    {id: 9, title: "IX - O forjar de um suposto crime", summary: "de atentado contra o Estado de Direito - violação do principio da livre apreciação da prova pelo tribunal.", page: 57, pdfUrl: "/documents/radiografia.pdf#page=57"},
     {id: 10, title: "X - Força Jurídica Cardinal", summary: "do ponto 32 dado como provado.", page: 77},
     {id: 11, title: "XI - Amputar 24 Pontos de Facto", summary: "Para arbitrariamente recusar considerar provados, 90 Pontos de Facto provados.", page: 78},
     {id: 12, title: "XII - Fraudes, Falsificações e Prevaricações", summary: "Em verdade, em verdade vos digo que muito mais do que mera Inexistência Jurídica o Acórdão ficou prenhe de Crimes de inserção de falsidades.", page: 83},
