@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "O Acórdão", href: "/acordao" },
     { name: "Cronologia", href: "/cronologia" },
     { name: "Documentos", href: "/documentos" },
+    { name: "Artigos", href: "/artigos" },
     { name: "Contactos", href: "/contactos" },
   ];
 
