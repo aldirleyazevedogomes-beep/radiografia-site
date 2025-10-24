@@ -9,10 +9,8 @@ export default function ChapterList({ chapters }) {
           <p className="text-gray-600 mb-4">{ch.summary}</p>
           {/* Always render <a> the same way */}
           <a
-            href={`/documents/radiografia.pdf#page=${ch.page}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-sm text-accent hover:underline"
+            href={`/capitulo/${ch.id}`}
+            className="text-accent font-medium hover:underline"
           >
             Ler Capítulo.
           </a>
