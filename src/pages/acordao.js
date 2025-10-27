@@ -11,7 +11,7 @@ export default function acordao() {
     const closeImage = () => setOpen({isOpen: false, src: "", alt: ""});
 
     return (
-        <Layout>
+        <div>
             <section className="text-center py-20">
                 <h1 className="text-5xl font-display font-bold mb-8 text-primary">O acordao e o Erro do Computador</h1>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-16">O relatorio denuncia a omissao de 24 pontos de facto essenciais na decisao final do STJ. A seguir, as paginas 68 e 69 comparadas, onde a suposta falha ocorreu.</p>
@@ -56,7 +56,7 @@ export default function acordao() {
                 alt={open.alt}
                 onClose={closeImage}
             />
-            </Layout>
+            </div>
     );
 }
 

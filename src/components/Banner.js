@@ -8,7 +8,7 @@ export default function Banner(){
                 alt="Deputado Amadeu Oliveira"
                 layout="fill"
                 priority
-                className="object-cover object-center brightness-75"
+                className="rounded-2xl shadow-lg mx-auto w-full md:w-3/4 object-cover"
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-center text-white px-6">
                 <h2 className="text-exl md:text-5xl font-display font bold drop-shadow-lg"></h2>

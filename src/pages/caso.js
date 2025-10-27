@@ -24,7 +24,7 @@ const chapters =[
 
 export default function Caso() {
     return (
-        <Layout>
+        <div>
             <div className="max-w-5xl mx-auto px-6">
                 <h1 classHome="text-3xl font-bold mb-6">O Caso</h1>
                 <p className="text-gray-700 mb-6">
@@ -32,7 +32,7 @@ export default function Caso() {
                </p>
                 <ChapterList chapters={chapters} />
              </div>
-        </Layout>
+        </div>
 
     );
 

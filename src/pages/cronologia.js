@@ -10,7 +10,7 @@ export default function cronologia() {
     ];
 
     return (
-        <Layout>
+        <div>
             <section className="py-20 text-center">
                 <h1 className="text-5-xl1 font-dispaly font-bold mb-8 text-primary">Cronologia dos Factos</h1>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-16">Linha temporal dos principais acontecimentos que marcaram o caso</p>
@@ -27,6 +27,6 @@ export default function cronologia() {
                     </ul>
                 </div>
             </section>
-        </Layout>
+        </div>
     )
 }

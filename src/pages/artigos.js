@@ -23,7 +23,7 @@ export default function Artigos () {
     ];
 
     return (
-        <Layout>
+        <div>
             <section className="py-20 text-center">
                 <h1 className="text-5xl font-display font-bold mb-8 text-primary">Artigos e Publicações sobre o Caso.</h1>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-16">Artigos e analises publicadas na Imprensa Nacional</p>
@@ -53,6 +53,6 @@ export default function Artigos () {
                     ))}
                 </div>  
             </section>
-        </Layout>
+        </div>
     )
 }

@@ -1,17 +1,34 @@
+"use client";
+import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/router";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
+
+  const router = useRouter();
+
   return (
-    <div className="flex flex-col min-h-screen">
-
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      {/* Navbar fixa, fora da transicao*/}
       <Navbar />
-     
-      <main className="flex-grow mt-20">{children}</main>
-            
 
-      <footer className="text-center py-6 text-gray-500 text-sm bprder-t mt-10">
-        &copy; {new Date().getFullYear()} Radiografia da Prisão de um Deputado. Todos os direitos reservados.
-       </footer>
+      {/* Area de transicao */}
+      <main className="flex-1 container mx-auto px-4 py-8">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={router.asPath}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20}}
+            transition={{ duration: 0.5, ease: "easeInOut"}}
+            >
+              {children}
+            </motion.div>
+        </AnimatePresence>
+      </main>
+
+      <Footer />
     </div>
   );
 }
