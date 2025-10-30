@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  // Transpile certain uncompiled packages that ship modern/TS syntax.
+  // `react-photo-view` includes source that Turbopack may attempt to parse
+  // so we transpile it to avoid Sucrase parsing/TS errors.
+  transpilePackages: ['react-photo-view'],
 };
 
-module.exports = nextConfig;
+export default nextConfig;

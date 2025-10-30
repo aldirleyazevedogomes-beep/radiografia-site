@@ -49,6 +49,10 @@ export default function Capitulo({ chapter }) {
                 </h1>
 
                 <article className="text-gray-700 leading-relaxed whitespace-pre-line text-justify max-w-prose mx-auto">
+                    {chapter.summary}
+                </article>
+
+                <article className="text-gray-700 leading-relaxed whitespace-pre-line text-justify max-w-prose mx-auto">
                     {chapter.content}
                 </article>
                    

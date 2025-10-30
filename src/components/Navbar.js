@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow sticky top-0 z-50">
       <div className="max-w-5xl mx-auto flex justify-between items-center h-16 px-6">
-        <Link href="/" className="text-primary font-extrabold text-xl">
+        <Link href="/" className="text-primary font-extrabold text-1xl">
           AMADEU OLIVEIRA
         </Link>
 

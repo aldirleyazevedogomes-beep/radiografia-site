@@ -1,24 +1,22 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600;800&display=swap');
-
-
-@media (max-width: 640px) {
-section{
+@layer components {
+  section {
     @apply mb-20;
+  }
 
-}
+  h1, h2, h3 {
+    font-family: 'Poppins', ui-sans-serif, system-ui;
+  }
 
-h1,h2,h3 {
-    @apply font-display;
-}
-
-p {
+  p {
     @apply leading-relaxed;
-}
+  }
 }
 
 

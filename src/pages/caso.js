@@ -26,7 +26,7 @@ export default function Caso() {
     return (
         <div>
             <div className="max-w-5xl mx-auto px-6">
-                <h1 classHome="text-3xl font-bold mb-6">O Caso</h1>
+                <h1 classHome="text-8xl font-bold mb-6 text-center">O Caso</h1>
                 <p className="text-gray-700 mb-6">
                     Esta secção reúne os capitulos que descrevem os factos e análises em ordem cronológica e temática, permitindo uma leitura segmentada e intuitiva das análises e conclusões.
                </p>

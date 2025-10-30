@@ -1,16 +1,24 @@
 "use client";
+import React from "react";
 
-export default function PDFViewer({ file, page =1 }) {
+export default function PDFViewer({ file, page =1, height = "80vh" }) {
     const pdfUrl = `${file}#page=${page}`;
 
     return (
-        <div className="w-full h-[80vh] bg-gray-100 rounded-xl overflow-hidden flex justify-center items-center shadow-inner">
+        <div 
+        className="w-full rounded-xl overflow-hidden border"
+        style={{ height }}
+        role="region"
+        aria-label="Visualizador de PDF"
+        >
             <object
+                    
               data={pdfUrl}
               type="application/pdf"
               width="100%"
               height="100%"
-              className="rounded-xl"
+              aria-label="PDF Embutido"
+              
             >
 
               {/*Fallback para browsers antigos */}
@@ -18,14 +26,21 @@ export default function PDFViewer({ file, page =1 }) {
                 src={pdfUrl}
                 width="100%"
                 height="100%"
-                className="rounded-xl"
-                title="PDF Viewer"
+                title="Visualizador de PDF"
+                style={{ border: "none"}}
 
               >
-                Esta navegador nao suporta visualizacao de PDF.
-                <a href={file} className="text-blue-600 underline">
-                    Clique aqui para abrir o relatorio.
+                <div className="p-6 text-center">
+                  <p>Esta navegador nao suporta visualização embutida de PDF.</p>
+                <a 
+                  href={file} 
+                  className="text-blue-600 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    Clique aqui para abrir o relatório.
                 </a>
+                </div>
               </iframe>
             </object>
         </div>
