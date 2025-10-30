@@ -16,7 +16,7 @@ const DOCUMENTS = [
     {
         id:"Petição CPI",
         title:"Petição para a Criação de uma Comissão Parlamentar de Inquérito (CPI)",
-        filename:"/pdfs/cpi.pdf",
+        filename:"/documents/cpi.pdf",
         defaultPage:1,
 
     }
