@@ -13,13 +13,7 @@ const DOCUMENTS = [
         description:"Baixe o relatório completo em formato PDF.",
         defaultPage:1,
     },
-    {
-        id:"Petição CPI",
-        title:"Petição para a Criação de uma Comissão Parlamentar de Inquérito (CPI)",
-        filename:"/documents/cpi.pdf",
-        defaultPage:1,
-
-    }
+    
 ];
 
 export default function Documents() {
