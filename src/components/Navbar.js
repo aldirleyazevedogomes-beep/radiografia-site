@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: "Cronologia", href: "/cronologia" },
     { name: "Documentos", href: "/documentos" },
     { name: "Artigos", href: "/artigos" },
+    { name: "CPI", href: "/cpi" },
     { name: "Contactos", href: "/contactos" },
   ];
 
